@@ -1,0 +1,290 @@
+/* Popular-Style */
+
+:root {
+    --alice-blue: #f0f8ff;
+    --eburnean: #ffffee;
+    --galactica: #000080;
+    --bright-blue: #00ABE4;
+    --dark-color: #343a40;
+    --green-shen: #5FBEB3;
+    --prussian-blue: #1D63FF;
+    --carnelian: #BE2314;
+    --light-gray: #f1f1f1;
+    --high-light-gray: #fafafa;
+    --orange1:rgb(250, 103, 50);
+}
+
+.hr-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin: 5px 0;
+}
+
+/* End Popular-Style */
+
+/* Layout */
+
+
+.accounts-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.bg-accounts {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    clip: rect(0, auto, auto, 0);
+    z-index: -1;
+}
+
+.bg-accounts-inner {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/back-accounts.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    opacity: 0.5;
+}
+
+
+.accounts-content{
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 250px);
+    width: 400px;
+    height: 500px;
+    padding: 10px 15px;
+    background-color: rgba(250, 250, 250,0.5);
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.accounts-content .account-buttons input{
+    display: none;
+}
+
+.accounts-content .account-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+.accounts-content .account-buttons div{
+    display: flex;
+    margin: 0 10px;
+}
+
+.register-btn,
+.login-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 45px;
+    border: 2px solid #ccc;
+    border-radius: 4rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #b6b4b4;
+}
+
+input#register-btn:checked+.register-btn,
+input#login-btn:checked+.login-btn{
+    background-color: var(--alice-blue);
+    border-color: var(--orange1);
+    color: var(--orange1);
+    transition: 0.2s;
+}
+
+.accounts-content input:not(input[type="checkbox"]){
+    width: 350px;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.register-form>div{
+    position: relative;
+}
+
+.register-form>div:nth-child(1) i,
+.register-form>div:nth-child(2) i,
+.register-form>div:nth-child(3) i,
+.register-form>div:nth-child(4) i{
+    position: absolute;
+    color: #ccc;
+    left: 3px;
+    top: 17px;
+}
+
+/* .accounts-content input:focus{
+    border-bottom: 1px solid var(--prussian-blue);
+} */
+
+.register-form>div:nth-child(5){
+    display: flex;
+    align-items: center;
+    margin: 20px 12px;
+}
+.accounts-content input[type="checkbox"]{
+    margin-left: 5px;
+    width: 17px;
+    height: 17px;
+}
+
+.accounts-content input#accept-role+span{
+    font-size: 0.9rem;
+    color: var(--dark-color);
+}
+
+.accounts-content input#accept-role+span a{
+    color: var(--carnelian);
+    text-decoration: none;
+}
+
+.register-submit,
+.login-submit{
+    border-radius: 4rem;
+    width: 350px;
+    height: 45px;
+    font-size: 1.1rem;
+    color: #fff;
+    border: 2px solid rgb(250, 103, 50);
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(250, 103, 50);
+}
+
+.register-submit:hover,
+.login-submit:hover{
+    background-color: rgb(241, 64, 0);
+    background-color: rgb(241, 64, 0);
+    border-color: rgb(241, 64, 0);
+}
+
+.other-registers{
+    position: relative;
+    margin: 17px 0;
+}
+
+.other-registers:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 13px;
+    background: #ccc;
+}
+.other-registers h4{
+    position: relative;
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--dark-color);
+    padding: 2px 5px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    background-color: var(--high-light-gray);
+    border-radius: 5px;
+    /* border-bottom: 1px solid #ccc; */
+    z-index: 1;
+}
+
+.other-registers>div button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.other-registers>div button:nth-child(1){
+    background-color: #1877F2;
+}
+.other-registers>div button:nth-child(2){
+    background-color: #db4a39;
+}
+
+/* Login-style */
+
+.login-form{
+    margin: 20px 0;
+}
+
+.login-form>div{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.login-form>div:nth-child(1) i,
+.login-form>div:nth-child(2) i{
+    position: absolute;
+    color: #ccc;
+    left: 3px;
+    top: 17px;
+}
+
+.login-form div:nth-child(3){
+    position: relative;;
+    text-align: right;
+    margin: 30px 12px;
+}
+
+.login-form div:nth-child(3) label{
+    position: absolute;
+    font-size: 0.9rem;
+    color: var(--dark-color);
+    top: -3px;
+}
+
+.forget-password a{
+    color: var(--galactica);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-content{
+    position: relative;
+
+}
+
+.form-content .register-form,
+.form-content .login-form{
+    position: absolute;
+    transition: 0.5s;
+}
+
+.form-content .register-form{
+    left: -400px;
+}
+
+.form-content .login-form{
+    left: 12px;
+}
+/* End Login-style */
+
+
+
+
+/* End Layout */

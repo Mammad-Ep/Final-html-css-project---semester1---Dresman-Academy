@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This site is related to baking and cake making">
+    <meta name="keywords" content="Cake,sweets,کیک,شیرینی">
+    <meta name="author" content="mammad_ep">
+    <meta name="robots" content="nofollow,noindex">
+    <link rel="icon" href="../images/favicon1.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/accounts.css">
+    <title>قنادی ممتاز - ورود و ثبت نام</title>
+</head>
+
+<body>
+
+    <div class="accounts-container">
+        <div class="accounts-content">
+            <div class="accounts-logo"></div>
+            <div class="account-buttons">
+                <div>
+                    <input type="radio" name="accounting-btn" value="1" id="register-btn"><label
+                        for="register-btn" class="register-btn" onclick="register_button()">ثبت نام</label>
+                </div>
+                <div>
+                    <input type="radio" name="accounting-btn" value="2" id="login-btn" checked><label for="login-btn"
+                        class="login-btn" onclick="login_button()">ورود</label>
+                </div>
+            </div>
+
+            <div class="form-content">
+                <div class="register-form" id="register-form">
+                    <div>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" name="full-name" id="full-name" placeholder="نام و نام خانوادگی">
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="email" name="mail" id="mail" placeholder="آدرس پست الکترونیکی">
+                    </div>
+                    <div>
+                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        <input type="password" name="pass1" id="pass1" placeholder="کلمه عبور">
+                    </div>
+                    <div>
+                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        <input type="password" name="pass2" id="pass2" placeholder="تکرار کلمه عبور">
+                    </div>
+                    <div>
+
+                        <input type="checkbox" name="accept-role" id="accept-role"><span>اینجانب <a href="">قوانین و
+                                مقررات
+                                سایت</a> را مطالعه و قبول دارم.</span>
+                    </div>
+                    <div>
+                        <button type="button" class="register-submit">ثبت نام</button>
+                    </div>
+
+                    <div class="other-registers">
+                        <h4>و یا ثبت نام کنید با</h4>
+                        <div>
+                            <button type="button" class="text-dec-none"><i class="fa-brands fa-facebook-f"></i>
+                                فیسبوک</button>
+                            <button type="button" class="text-dec-none"><i class="fa-brands fa-google-plus-g fa-lg"></i>
+                                گوگل</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login-form" id="login-form">
+                    <div>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" name="username" id="username" placeholder="نام کاربری یا ایمیل">
+                    </div>
+                    <div>
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" name="pass1" id="pass1" placeholder="کلمه عبور">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="member-me" id="member-me" value="1"><label>مرا بخاطر بسپار</label>
+                    </div>
+                    <div>
+                        <button type="button" class="login-submit">ورود</button>
+                    </div>
+                    <div class="forget-password">
+                        <a href="" class="text-dec-none">رمز عبور خود را فراموش کرده ام؟</a>
+                    </div>
+
+                    <div class="other-registers">
+                        <h4>و یا وارد شوید با</h4>
+                        <div>
+                            <button type="button" class="text-dec-none"><i class="fa-brands fa-facebook-f"></i>
+                                فیسبوک</button>
+                            <button type="button" class="text-dec-none"><i class="fa-brands fa-google-plus-g fa-lg"></i>
+                                گوگل</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="bg-accounts">
+            <div class="bg-accounts-inner"></div>
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
